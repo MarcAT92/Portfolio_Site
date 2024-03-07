@@ -61,7 +61,7 @@
 
 /*=============== typed js =============== */
     const typed = new Typed('.multiple-text', {
-        strings: ['Full-Stack Developer', 'App Developer', 'BI Specialist'],
+        strings: ['Full-Stack Developer', 'UX/UI Specialist', 'E-commerce Developer'],
         typeSpeed: 100,
         backSpeed: 100,
         backDelay: 100,

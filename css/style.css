@@ -20,8 +20,8 @@
 	rgba(0, 22, 29, 0.9) 80%, 
 	rgba(0, 11, 15, 0.9) 100%);
 
-	--second-bg-color: rgb(74, 116, 116) 100%;
-	--text-color: #EEF1EF;
+	--second-bg-color: rgb(87, 87, 87) 100%; 
+	--text-color: #ffffff;
 	--main-color: #f48c06;
 	--main-color1: #fcc072;
 }
@@ -34,7 +34,7 @@
 	rgba(60, 67, 67, 1) 80%, 
 	rgba(77, 86, 86, 1) 100%);
 
-	--second-bg-color: #003049;
+	--second-bg-color: #23232c;
 	--text-color: #fff3b0;
 }
 
@@ -88,6 +88,11 @@ label {
 
 .header input {
     opacity: 0;
+}
+
+.heading {
+	text-align: center;
+	font-size: 4.5rem;
 }
 
 .moon {
@@ -180,7 +185,7 @@ span {
 }
 
 .home-content p {
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 }
 
 .social-media a {
@@ -241,27 +246,37 @@ span {
 	background: var(--second-bg-color);
 }
 
-.about-img img{
-	margin-top: -10rem;
-	width: 35vw;
-	margin-right: 1rem;
+.about-img {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 4rem;
 }
 
-.heading {
-	text-align: center;
-	font-size: 4.5rem;
+.img-content {
+    text-align: center;
+    margin: 1rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;	
+}
+
+.img-content h4 {
+		font-size: 15px;
 }
 
 .about-content h2{
 	text-align: left;
 	line-height: 1.2;
 }
+
 .about-content h3 {
 	font-size: 2.6rem;
+	text-decoration: underline;
 }
 
 .about-content p {
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 	margin: 2rem 0 3rem;
 }
 .skills h2 {
@@ -517,6 +532,11 @@ form .textarea-field .item {
 	footer {
 		padding: 2rem 3%;
 	}
+
+	.img-content h4 {
+		font-size: 15px;
+	}
+	
 }
 
 @media (max-width: 768px){
@@ -559,20 +579,18 @@ form .textarea-field .item {
 	}
 
 	.home-img img {
-		width: 70vw;
-		margin-top: 4rem;
+		width: 50vw;
+		margin-top: -10rem;
 	}
 
 	.about {
 		flex-direction: column-reverse;
 	}
 
-	.about-img img {
-		width: 70vw;
-		margin-top: 4rem;
-		display: none;
+	.img-content h4 {
+		font-size: 15px;
 	}
-
+	
 	.services h3 {
 		margin-bottom: 3rem;
 	}
