@@ -253,12 +253,18 @@ span {
 	gap: 4rem;
 }
 
+.about-img img {
+	width: auto;
+	height: auto;
+}
+
 .img-content {
     text-align: center;
     margin: 1rem; 
     display: flex;
     flex-direction: column;
-    align-items: center;	
+    align-items: center;
+	gap: 1px	
 }
 
 .img-content h4 {
