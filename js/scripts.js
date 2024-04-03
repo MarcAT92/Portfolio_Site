@@ -189,4 +189,4 @@
             // If 'acceptedCookies' cookie is found, hide the cookie consent
             document.getElementById('cookieConsent').style.display = 'none';
         }
-    }
+    } 
