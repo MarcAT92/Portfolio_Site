@@ -170,3 +170,23 @@
         }
     });
 
+/*=============== verify cookies =============== */
+    function acceptCookies() {
+        // Set a cookie named 'acceptedCookies' with value 'true' that expires in 7 days
+        document.cookie = "acceptedCookies=true; expires=" + new Date(new Date().getTime() + 7 * 24 * 60 * 60 * 1000).toUTCString() + "; path=/";
+        // Hide the cookie consent
+        document.getElementById('cookieConsent').style.display = 'none';
+    }
+
+    function closeCookieConsent() {
+        // Hide the cookie consent
+        document.getElementById('cookieConsent').style.display = 'none';
+    }
+
+    // Check if the user has already accepted cookies
+    window.onload = function() {
+        if (document.cookie.split(';').some((item) => item.trim().startsWith('acceptedCookies='))) {
+            // If 'acceptedCookies' cookie is found, hide the cookie consent
+            document.getElementById('cookieConsent').style.display = 'none';
+        }
+    }
