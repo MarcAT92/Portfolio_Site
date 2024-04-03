@@ -715,14 +715,19 @@ form .textarea-field .item {
 
 	.about img {
 		width: 20vw;		
-	}	
+	}
+
+	#cookieConsent {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
 }
 
 @media (max-width: 365px) {
 	body {
 		margin: 0;
 		padding: 0;
-		
 	}
 
 	.home-img img {
@@ -732,17 +737,26 @@ form .textarea-field .item {
 	.about img {
 		width: 20vw;		
 	}
+
+	#cookieConsent {
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 @media (max-width: 306px) {
 	body {
 		margin: 0;
 		padding: 10;
-		
 	}	
 	.about img {
 		width: 15vw;		
 	}
+	
+	#cookieConsent {
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 @media (max-width: 190px) {
