@@ -183,10 +183,10 @@
         document.getElementById('cookieConsent').style.display = 'none';
     }
 
-    // Check if the user has already accepted cookies
+   /* // Check if the user has already accepted cookies
     window.onload = function() {
         if (document.cookie.split(';').some((item) => item.trim().startsWith('acceptedCookies='))) {
             // If 'acceptedCookies' cookie is found, hide the cookie consent
             document.getElementById('cookieConsent').style.display = 'none';
         }
-    } 
+    }  */
