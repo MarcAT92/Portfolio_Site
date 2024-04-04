@@ -697,6 +697,12 @@ form .textarea-field .item {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
+	#cookieConsent {
+        left: 50%;
+        transform: translateX(-50%);
+		bottom: 35%;
+	}
+
 }
 
 @media (max-width: 617px) {
@@ -711,6 +717,12 @@ form .textarea-field .item {
 	.footer p {
 		text-align: center;
 		margin-top: 2rem;
+	}
+
+	#cookieConsent {
+        left: 50%;
+        transform: translateX(-50%);
+		bottom: 25%;
 	}
 
 
@@ -736,8 +748,8 @@ form .textarea-field .item {
 	#cookieConsent {
         left: 50%;
         transform: translateX(-50%);
-    }
-
+        bottom: 25%;
+	}
 }
 
 @media (max-width: 365px) {
